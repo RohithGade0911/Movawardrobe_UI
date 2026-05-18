@@ -18,7 +18,17 @@ export default function Nav() {
 
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
-      <Link href="/" className="nav-logo">MovaWardrobe</Link>
+      <Link href="/" className="nav-logo">
+        <img
+          src="/logo.png"
+          alt="Movawardrobe"
+          style={{
+            height: '32px',
+            width: 'auto',
+            objectFit: 'contain'
+          }}
+        />
+      </Link>
 
       <div className="nav-links">
         <Link href="/shop" className={`nav-link${pathname === '/shop' ? ' active' : ''}`}>Shop</Link>
